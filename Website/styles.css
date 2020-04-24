@@ -1,0 +1,155 @@
+@charset "utf-8";
+body {
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+.restrict {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.files {
+    visibility: hidden;
+}
+
+hr {
+    margin-bottom: -5px;
+    margin-top: -5px;
+    padding-bottom: -2px;
+    font-size: 2px;
+    line-height: 0.7;
+}
+
+p {
+    display: inline-block;
+}
+
+.file {
+    margin-top: 24px;
+    font-weight: bold;
+}
+
+.text {
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    visibility: hidden;
+}
+
+.center {
+    text-align: center;
+}
+
+.top {
+    /*overflow: hidden;*/
+    background-color: #0E0D0D;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vbox {
+    /*margin-top: 86px;*/
+    position: relative;
+    height: 100%;
+    margin-left: 0px;
+    background-color: #7c827c;
+    float: left;
+    /*text-align: center;*/
+    padding-left: 30px;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+.button {
+    background-color: #af9965;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+.button:disabled {
+    background-color: #99968E;
+    color: rgba(0, 0, 0, 0.51);
+}
+
+.chooseButton {
+    display: inline-block;
+    margin-top: 190px;
+    margin-left: -370px;
+    color: #34495e;
+    cursor: pointer;
+    text-align: left;
+    overflow: hidden;
+    position: absolute;
+    background: #dce4ec;
+    border-radius: 25px;
+    width: 10%;
+    visibility: hidden;
+
+}
+
+.chooseButton:hover {
+    border-color: #34495e;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    color: white;
+
+    background-color: #AF9965;
+    border-radius: 25px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.chooseButton:disabled {
+    background-color: #99968E;
+}
+
+#placeholder {
+    background-color: #ffffff;
+    position: relative;
+    width: 180px;
+    height: 300px;
+    overflow-y: scroll;
+    text-align: center;
+
+}
+
+.container {
+    visibility: hidden;
+    position: relative;
+    margin-left: 800px;
+    margin-top: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    -webkit-animation: rotation 1s infinite;
+    animation: rotation 1s infinite;
+}
+
+.container .shape {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+

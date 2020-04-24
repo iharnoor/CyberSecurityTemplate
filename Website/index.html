@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Cyber Insurance (DOJ)</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>-->
+<body>
+
+
+<div class="top"><h1 class="center" style="color: #AF9965">Cyber Insurance (DOJ)</h1>
+</div>
+
+<div class="vbox">
+    <!-- <button class="button">Choose File</button> -->
+    <!--<button class="button" id="refresh" onclick="location.reload(true)">Create PieChart</button>-->
+    <br>
+    <select class=button id="GS_History" name="transfer_reason"
+            onchange="selectInputType(this.value)">
+        <option value="type">Select Year Range</option>
+        <option value="pf">2001-2010</option>
+        <option value="Triplets">2010-2020</option>
+        <option value="dna">1990-2000</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="button" onclick="onClickCreateGraph()" id="createGraph">Create Graph</button>
+    <!--<div id="placeholder">-->
+    <!--<label>Displayed Leaves</label><br>-->
+    <!--</div>-->
+    <br>
+    <!--<button class="button" onclick="removeNodesAction()" id="updateNetwork">Update Network</button>-->
+</div>
+
+
+<div class="container" id="loader">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+</div>
+<h2 id="instruct" style="text-align: center">Please select the year range you're interested in.</h2>
+<div class="restrict">
+    <canvas id="pieChart" height="400" width="400"></canvas>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="restrict">
+    <canvas id="lineChart" height="400" width="400"></canvas>
+</div>
+
+
+<script src="sketch.js" type="text/javascript"></script>
+
+</body>
+</html>
